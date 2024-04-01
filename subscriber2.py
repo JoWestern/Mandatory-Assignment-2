@@ -4,7 +4,7 @@ from paho.mqtt import client as mqtt_client
 
 broker = 'broker.emqx.io'
 port = 1883
-topic = "CyberSec/#"
+topic = "CyberSec/+/Classified"
 # Generate a Client ID with the subscribe prefix.
 client_id = f'subscribe-{random.randint(0, 100)}'
 # username = 'emqx'
@@ -13,7 +13,7 @@ client_id = f'subscribe-{random.randint(0, 100)}'
 def connect_mqtt() -> mqtt_client:
     def on_connect(client, userdata, flags, rc):
         if rc == 0:
-            print("Multi-Level Subscriber connected to MQTT Broker!")
+            print("Single-Level Subscriber connected to MQTT Broker!")
         else:
             print("Failed to connect, return code %d\n", rc)
 

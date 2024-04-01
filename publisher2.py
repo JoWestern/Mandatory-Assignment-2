@@ -4,7 +4,7 @@ from paho.mqtt import client as mqtt_client
 
 broker = 'broker.emqx.io'
 port = 1883
-topic = "CyberSec/IKT520"
+topic = "CyberSec/IKT520/Classified"
 client_id = f'publish-{random.randint(0, 1000)}'
 # username = 'emqx'
 # password = 'public'
