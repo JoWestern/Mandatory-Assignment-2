@@ -7,7 +7,7 @@ from paho.mqtt import client as mqtt_client
 
 broker = 'broker.emqx.io'
 port = 1883
-topic = "CyberSec/#"
+topic = "CyberSec/IKT520"
 # Generate a Client ID with the subscribe prefix.
 client_id = f'subscribe-{random.randint(0, 100)}'
 # username = 'emqx'
